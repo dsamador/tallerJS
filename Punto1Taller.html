@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let saldoAterior = Number(prompt("Por favor digite su saldo"));
+        let compras = Number(prompt("Por favor digite el monto de las compras que usted realizó"));
+        let descuento = (saldoAterior + compras) * 0.15;
+        let saldoActual =  saldoAterior + compras - descuento;
+
+        console.log("Su saldo actual es " + saldoActual);
+
+    </script>
+</body>
+</html>
