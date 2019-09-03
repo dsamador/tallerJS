@@ -18,24 +18,18 @@
         while(condicion){
             producto = Number(prompt("Por favor digite precio del producto " + i));
             if(producto >= 200){
-                producto += producto * descuento1;
-                console.log("Costo de producto " + i + " es " + producto + " descuento " + descuento1);
+                console.log("Costo de producto " + i + " es " + producto + " descuento " + descuento1 + " le queda en " + (producto = (producto - producto * descuento1)));                
             }else if(producto > 100 && producto < 200){
-                producto += producto * descuento2;
-                console.log("Costo de producto " + i + " es " + producto + " descuento " + descuento2);
+                console.log("Costo de producto " + i + " es " + producto + " descuento " + descuento2 + " le queda en " + (producto = (producto - producto * descuento2)));
             }else{
-                producto += producto * descuento3;
-                console.log("Costo de producto " + i + " es " + producto + " descuento " + descuento3);
+                console.log("Costo de producto " + i + " es " + producto + " descuento " + descuento3 + " le queda en " + (producto = (producto - producto * descuento3)));                
             }
             total += producto;  
             console.log("Total " + total)
             seguir = prompt("Para continuar digite cualquier tecla para detener digite x")          
-            if (seguir == x){
+            if (seguir == "x"){
                 condicion = false;
             }
-
-
-
             i++;
         }    
     </script>
